@@ -1,0 +1,106 @@
+*
+{
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+}
+.micro
+{
+width: 100%;
+height: 100vh;
+background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(op999.jpg);
+background-size: cover;`
+background-position: center;
+}
+.img
+{
+width: 170px;
+height: 100px;
+cursor: pointer;
+}
+.nano
+{
+width: 85%;
+margin: auto;
+padding: 35px 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.micro ul li
+{
+list-style: none;
+display: inline-block;
+margin: 0 20px;
+position: relative;
+}
+.micro ul li a
+{
+   text-decoration: none;
+   color: white;
+  }
+ .micro ul li::after
+  {
+      content:' ' ;
+      height: 3px;
+      width: 0%;
+      background-color: #009688;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+  transition: 0.1s;
+  }
+  .micro ul li:hover::after
+  {
+  width: 100%;
+    }
+    .meter
+    {
+        width: 100%;
+        top: 50%;
+        position: absolute;
+        text-align: center;
+       color: orange;
+    }
+    .meter h1
+    {
+    font-size: 70px;
+    margin-top: 80px;
+    }
+    button
+    {
+    width:200px;
+    padding: 0 15px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bolder;
+    background:transparent;
+    border: 2px solid white;
+ cursor: pointer;  
+ color:#fff;
+ position: relative;
+ overflow: hidden;
+    }
+    span
+    {
+                 background: red;
+                 height: 100%;
+                 width: 0;
+                 border-radius: 25px;
+                 left: 0;
+                 position: absolute;
+                 bottom: 0;
+                 z-index: -1;
+                 transition: 0.7s;
+                  }
+    button:hover span
+    {
+                                      transition: 0.7s;
+                                    width: 100%;
+    }
+    button:hover
+    {
+                                      background: red;
+                                      border: none;
+    }
